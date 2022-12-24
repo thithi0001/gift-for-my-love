@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift For My Love</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts(icons)/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <p class="text glow">Gửi em iu
+            <i class="ti-heart" style="font-weight: 600;"></i>
+        </p>
+
+        <div class="box-behide"></div>
+        <div class="heart"></div>
+
+        <div class="heart-around-left">
+            <div class="lt-heart h01 heart-beat-02 box-shadow"></div>
+            <div class="lt-heart h02 heart-beat-02 box-shadow"></div>
+            <div class="lt-heart h03 heart-beat-02 box-shadow"></div>
+            <div class="lt-heart h04 heart-beat-02 box-shadow"></div>
+            <div class="lt-heart h05 heart-beat-02 box-shadow"></div>
+            <div class="lt-heart h06 heart-beat-02 box-shadow"></div>
+            <div class="lt-heart h14 heart-beat-02 box-shadow"></div>
+            <div class="lt-heart h15 heart-beat-02 box-shadow"></div>
+        </div>
+        
+        <div class="lt-heart h07 heart-beat-02 box-shadow"></div>
+
+        <div class="heart-around-right">
+            <div class="lt-heart h08 heart-beat-02 box-shadow"></div>
+            <div class="lt-heart h09 heart-beat-02 box-shadow"></div>
+            <div class="lt-heart h10 heart-beat-02 box-shadow"></div>
+            <div class="lt-heart h11 heart-beat-02 box-shadow"></div>
+            <div class="lt-heart h12 heart-beat-02 box-shadow"></div>
+            <div class="lt-heart h13 heart-beat-02 box-shadow"></div>
+            <div class="lt-heart h16 heart-beat-02 box-shadow"></div>
+            <div class="lt-heart h17 heart-beat-02 box-shadow"></div>
+        </div>
+
+        <div class="open-card js-open-card">
+            <i class="ti-email"></i>
+        </div>
+        
+        <div class="card js-card">
+            <img id="tree-left" src="/assets/img/tree_on_the_left.jpg" alt="">
+            <img id="tree-right" src="/assets/img/tree_on_the_right.jpg" alt="">
+            <img id="santa" src="/assets/img/santa.png" alt="">
+            <p>Giáng sinh này không được ở bên em nhưng anh vẫn không cảm thấy lạnh bởi vì em chính là ngọn lửa ấm áp trong tim anh. Cảm ơn em, tình yêu của anh!</p>
+            <div class="close-card js-close-card back-to-heart">
+                <i class="ti-arrow-left"></i>
+            </div>
+        </div>
+
+        <div class="open-gift js-open-gift">
+            <i class="ti-gift"></i>
+        </div>
+
+        <div class="gift js-gift">
+            <div class="gift-header">
+                <div class="close-gift js-close-gift back-to-heart">
+                    <i class="ti-arrow-left"></i>
+                </div>    
+            </div>
+
+            <p>Nhìn là hiểu liền rồi he, còn nhiều lắm á 😁</p>
+        </div>
+    </div>
+
+    <script>
+        const webCard = document.querySelector('.js-card')
+        const openCard = document.querySelector('.js-open-card')
+        const closeCard = document.querySelector('.js-close-card')
+        const Gift = document.querySelector('.js-gift')
+        const openGift = document.querySelector('.js-open-gift')
+        const closeGift = document.querySelector('.js-close-gift')
+        const hideGiftIcon = document.querySelector('.open-gift')
+
+        function showCard() {
+            webCard.classList.add('open')
+            hideGiftIcon.classList.add('close')
+        }
+
+        function hideCard() {
+            webCard.classList.remove('open')
+            hideGiftIcon.classList.remove('close')
+        }
+
+        function showGift() {
+            Gift.classList.add('open')
+        }
+
+        function hideGift() {
+            Gift.classList.remove('open')
+        }
+
+        openCard.addEventListener('click', showCard)
+        closeCard.addEventListener('click', hideCard)
+
+        openGift.addEventListener('click', showGift)
+        closeGift.addEventListener('click', hideGift)
+    </script>
+</body>
+</html>
