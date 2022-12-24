@@ -296,8 +296,8 @@ body {
     font-size: 40px;
     cursor: pointer;
     position: fixed;
-    bottom: 10px;
-    right: 40px;
+    top: 650px;
+    right: 50px;
     text-align: center;
     line-height: 60px;
     color: #000;
@@ -322,8 +322,8 @@ body {
     font-size: 40px;
     cursor: pointer;
     position: fixed;
-    bottom: 10px;
-    left: 40px;
+    top: 650px;
+    left: 50px;
     text-align: center;
     line-height: 60px;
     color: #000;
