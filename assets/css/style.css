@@ -370,7 +370,7 @@ body {
     top: 600px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 739px) {
     #tree-left , 
     #tree-right {
         width: 300px;
