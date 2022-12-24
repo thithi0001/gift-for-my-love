@@ -381,7 +381,7 @@ body {
     }
 
     .gift {
-        background-image: url('.../img/em\(full\).jpg');
+        background-image: url(".../img/em\(full\).jpg");
         background-size: contain;
         background-position-y: 55px;
     }
